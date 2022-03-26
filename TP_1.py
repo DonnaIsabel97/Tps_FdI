@@ -103,5 +103,19 @@ print('Al vendedor numero ', vendedor, 'le corresponde un salario total de', sal
 
 ''' Ejercicio 8 '''
 
+''' Ejercicio 9 '''
+
+tiempo = int(input('Ingresa el periodo deseado en segundos: '))
+
+min = tiempo // 60
+hs = min // 60
+dias = hs // 24
+
+segundos = dias % tiempo
+
+print('Los ', tiempo, 'segundos equivalen a ',dias, 'dias',hs, 'horas', min, 'minutos y ',segundos, 'segundos')
+
+''' Ejercicio 10 '''
+
 
 
