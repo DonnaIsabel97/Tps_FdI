@@ -19,13 +19,13 @@ factorial= 1
 
 while nro < 2 or nro > 10 :
     nro = int (input("Ingrese un numero valido: "))
-
+#Para sacar factorial
 while nro >1:
     factorial= factorial * nro
     nro=nro-1
 
 print('El factorial es de',factorial)
-
+#Hacer TP5 de la guia
 
 
     
