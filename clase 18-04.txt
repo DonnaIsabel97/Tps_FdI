@@ -1,0 +1,25 @@
+''' Ingresar dos valores a y b. Informar si son nros amigos
+Nro amigo es cuando la suma de los divisores de a, sin el mismo a, es igual a b, y viceversa
+Ej: 220 y 284 son amigos'''
+
+vA = int(input("Ingresar el primer valor: "))
+vB = int(input("Ingresar el segundo valor: "))
+
+div, suma = 1, 0
+div2, suma2= 1, 0
+
+while div<vA and div2<vB:
+    
+    if vA%div == 0:
+        suma = suma+ div
+    div= div + 1
+
+    if vB % div2 ==0:
+        suma2=suma2 + div2
+    div2= div2 +1
+
+if suma == vB and suma2 == vA:
+    print('Estos numeros son amigos.')
+
+else:
+    print("Estos numeros no son amigos.")
